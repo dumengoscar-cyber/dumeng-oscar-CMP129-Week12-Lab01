@@ -2,7 +2,7 @@
   "java.project.sourcePaths": ["."],
   "java.project.outputPath": "bin",
   "java.project.referencedLibraries": [
-    "C:/Users/AHedhli/Downloads/openjfx-27.0.1_windows-x64_bin-sdk (1)/javafx-sdk-27.0.1/lib/*.jar"
+    "C:/Users/dumeng.oscar/Downloads/openjfx-27.0.1_windows-x64_bin-sdk/javafx-sdk-27.0.1/lib.jar"
   ],
   "java.debug.settings.onBuildFailureProceed": false
 }
