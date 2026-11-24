@@ -7,6 +7,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 
 public class CalculatorApp extends Application {
     public static void main(String[] args) 
@@ -39,7 +40,7 @@ Button bc = new Button("clear");
 //grid to space out buttons 
 //grid/scene
 GridPane grid = new GridPane();
-Scene scene = new Scene(grid, 400, 300);
+//Scene scene = new Scene(grid, 400, 300);
 grid.setHgap(10);
 grid.setVgap(10);
 //text fields 
@@ -70,7 +71,9 @@ grid.add(bc, 9, 1);
 //another grid for equation and answer(affected button space in same box)
 HBox bbox = new HBox(10,textFieldO, textFieldA);
 
-Scene scene2 = new Scene(bbox);
+VBox root = new VBox(20, grid, bbox);
+
+Scene scene = new Scene(root, 400, 150);
 
 primaryStage.setScene(scene);
 
